@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria Mascotas Felices</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header con logo y menú -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-paw"></i>
+            <h1>Mascotas Felices</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección Hero (Banner principal) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Cuidamos a tus mascotas con amor</h2>
+            <p>Servicios veterinarios de calidad para perros, gatos y más.</p>
+            <a href="#contacto" class="btn">¡Agenda una cita!</a>
+        </div>
+        <div class="huellas"></div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="grid-servicios">
+            <div class="servicio">
+                <i class="fas fa-syringe"></i>
+                <h3>Vacunación</h3>
+                <p>Protege a tu mascota de enfermedades.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-stethoscope"></i>
+                <h3>Consultas</h3>
+                <p>Revisiones generales y especializadas.</p>
+            </div>
+            <div class="servicio">
+                <i class="fas fa-cut"></i>
+                <h3>Peluquería</h3>
+                <p>Baño, corte y cuidado estético.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="nosotros">
+        <h2>¿Quiénes Somos?</h2>
+        <p>Somos un equipo de veterinarios apasionados por el bienestar animal. Con más de 10 años de experiencia, ofrecemos tratamientos personalizados.</p>
+        <div class="huellas-gato"></div>
+    </section>
+
+    <!-- Sección Contacto -->
+   <section id="contacto" class="contacto">
+    <h2>Contacto</h2>
+    <div class="form-container">
+        <form class="modern-form" action="https://formsubmit.co/tucorreo@gmail.com" method="POST">
+    <!-- Campos del formulario (¡asegúrate de incluir 'name' en cada uno!) -->
+    <input type="text" name="nombre" placeholder="Nombre" required>
+    <input type="email" name="email" placeholder="Correo" required>
+    <textarea name="mensaje" placeholder="Mensaje" required></textarea>
+    <!-- Evita spam -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="text" name="_honey" style="display:none">
+    
+    <button type="submit" class="btn-enviar">Enviar <i class="fas fa-paper-plane"></i></button>
+</form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 Veterinaria Mascotas Felices. Todos los derechos reservados.</p>
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
